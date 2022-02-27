@@ -1,0 +1,30 @@
+{
+  "name": "tsbottest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "build": "tsc -p ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.12.0",
+    "@discordjs/collection": "^0.5.0",
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/rest": "^0.3.0",
+    "@discordjs/voice": "^0.8.0",
+    "dayjs": "^1.10.7",
+    "discord-api-types": "^0.27.2",
+    "discord-ytdl-core": "^5.0.4",
+    "discord.js": "^13.6.0",
+    "ffmpeg-static": "^4.4.1",
+    "node-abort-controller": "^3.0.1",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.43",
+    "youtube-dl-exec": "^2.0.6",
+    "ytdl-core": "^4.10.1"
+  }
+}
